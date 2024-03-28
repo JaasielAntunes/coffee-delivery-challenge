@@ -1,6 +1,10 @@
-import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
-import { Heading, Hero, HeroContent, Info } from './styles'
+import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
 import { useTheme } from 'styled-components'
+
+import { Card } from '../../components/Card'
+
+import { coffees } from '../../../data.json'
+import { CoffeeList, Heading, Hero, HeroContent, Info } from './styles'
 
 export function Home() {
   const theme = useTheme()
@@ -11,9 +15,10 @@ export function Home() {
         <HeroContent>
           <div>
             <Heading>
-              <h1>Encontre o café perfeito para qualquer hora do dia</h1>
+              <h1>Encontre o café perfeito para qualquer hora do dia</h1>
+
               <span>
-                Com o Coffee Delivery você recebe seu café onde estiver, a
+                Com o Coffee Delivery você recebe seu café onde estiver, a
                 qualquer hora
               </span>
             </Heading>
@@ -61,11 +66,21 @@ export function Home() {
             </Info>
           </div>
 
-          <img src="../../assets/hero.svg" alt="Café do Coffee Delivery" />
+          <img src="/src/assets/hero.svg" alt="Café do Coffee Delivery" />
         </HeroContent>
 
-        <img src="../../assets/hero-bg.svg" alt="" />
+        <img src="/src/assets/hero-bg.svg" id="hero-bg" alt="" />
       </Hero>
+
+      <CoffeeList>
+        <h2>Nossos cafés</h2>
+
+        <div>
+          {coffees.map((coffee) => (
+            <Card key={coffee.id} coffee={coffee} />
+          ))}
+        </div>
+      </CoffeeList>
     </div>
   )
 }
