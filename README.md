@@ -1,5 +1,5 @@
 <h1 align="center">
-  Aplicação Frontend Web desenvolvida como resolução de um desafio referente ao módulo criando SPAs com React disponível na plataforma da <a target="blank" href="https://app.rocketseat.com.br/home">Rocketseat</a>.
+  Aplicação Frontend Web desenvolvida como resolução de um desafio referente ao módulo criando SPAs com React disponível na plataforma da <a target="_blank" href="https://app.rocketseat.com.br/home">Rocketseat</a>.
 </h1>
 
 <p align="center">
