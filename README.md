@@ -26,6 +26,7 @@ dificuldades pelo caminho, sempre buscando a solução das dificuldades através
 - React e React-DOM
 - Phosphor react
 - Immer
+- JavaScript
 - TypeScript
 - Zod
 - Vite
